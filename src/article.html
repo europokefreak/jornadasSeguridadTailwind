@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png?as=webp">
+    <title>Jornadas de Seguridad | Artículo</title>
+  </head>
+  <body class="flex flex-col h-screen bg-seguridad-background">
+    <include src="./views/menu.html"></include>
+    <main>
+      <div class="w-full max-w-full pt-32 pb-32 mb-8 bg-cover bg-center text-seguridad-menu font-bold text-xl" style="background-image: url('./assets/images/articulo-principal.jpg?as=webp');">
+        <div class="w-5/6 mx-auto">
+          <h1 class="text-4xl font-medium leading-10">Ingeniería Social y Concienciación en Seguridad: Métodos de Engaño y Estrategias de Prevención</h1>
+          <p class="mt-12 text-center">por Sergio Martínez</p>
+        </div>   
+      </div>
+      <article class="w-1/2 mx-auto">
+        <blockquote class="text-lg text-center lg:w-1/4 lg:mr-4 lg:float-left lg:text-left">
+          <q>Los humanos son el eslabón más débil en la cadena de seguridad</q>
+          <cite> Kevin Mitnick</cite>
+        </blockquote>
+        <p class="mb-4">
+          La <strong>ingeniería social</strong> es una de las técnicas más efectivas utilizadas por ciberdelincuentes para manipular a individuos y obtener información confidencial. En lugar de atacar directamente sistemas tecnológicos, los atacantes se centran en la parte más vulnerable de la seguridad: las personas. Esta práctica se basa en el uso del engaño, el miedo o la urgencia para influir en las decisiones de los usuarios.
+        </p>
+
+        <h2 class="font-bold mb-4 text-4xl">Estrategias efectivas para educar a usuarios y empleados</h2>
+        
+        <include src="./views/list.html">
+          {
+            "listElementTitle1": "Simulaciones y ejercicios prácticos",
+            "listElementDescription1": "Realizar simulaciones de ataques para que los usuarios aprendan a identificar amenazas reales.",
+            "listElementTitle2": "Formación continua y actualizada",
+            "listElementDescription2": "Ofrecer cursos y talleres periódicos para mantener a los usuarios informados sobre las últimas amenazas.",
+            "listElementTitle3": "Campañas de concienciación visual",
+            "listElementDescription3": "Usar carteles e infografías para reforzar conceptos clave en áreas de trabajo.",
+            "listElementTitle4": "Promover una cultura de seguridad",
+            "listElementDescription4": "Fomentar una mentalidad donde los empleados se sientan responsables de la seguridad y reporten actividades sospechosas."
+          }
+        </include>
+    
+        <h2 class="font-bold mb-4 text-4xl">Métodos de engaño más comunes</h2>
+    
+        <p class="mb-4">
+          Entre las formas más conocidas de ingeniería social se encuentran el <strong>phishing</strong>, el <strong>vishing</strong> y el <strong>smishing</strong>. El <strong>phishing</strong> es una técnica en la que los atacantes envían correos electrónicos fraudulentos haciéndose pasar por entidades legítimas para engañar a los usuarios y robar información confidencial, como contraseñas o datos bancarios. Por ejemplo, un correo que parece venir de tu banco solicitando que actualices tu información personal a través de un enlace falso.
+        </p>
+        <p class="mb-4">
+          El <strong>vishing</strong> (voice phishing) es una variante del phishing que se realiza a través de llamadas telefónicas. Los estafadores suelen hacerse pasar por empleados de soporte técnico, bancos u organizaciones gubernamentales para conseguir información personal. Una táctica común es informar de un supuesto problema urgente con una cuenta bancaria para que la víctima actúe precipitadamente. Por su parte, el <strong>smishing</strong> es similar al phishing, pero se lleva a cabo mediante mensajes SMS o aplicaciones de mensajería. Mensajes como &laquo;Has ganado un premio&raquo; o &laquo;Se detectó actividad sospechosa en tu cuenta&raquo; son ejemplos clásicos de esta técnica.
+        </p>
+    
+        <p class="mb-4">
+          Estos métodos de engaño son exitosos porque explotan emociones como el miedo, la curiosidad y la urgencia. Los usuarios que no están formados en identificar estas amenazas son más propensos a caer en la trampa, lo que puede tener graves consecuencias tanto a nivel personal como empresarial. Es esencial que las organizaciones implementen programas de concienciación en seguridad para protegerse contra estos ataques.
+        </p>
+    
+        <p class="mb-4">
+          La educación y la concienciación continua son las mejores defensas contra los ataques de ingeniería social. Como menciona Bruce Schneier, experto en seguridad informática:
+        </p>
+    
+        <blockquote class="text-lg text-center mb-4">
+          “La seguridad es un proceso, no un producto.”
+        </blockquote>
+    
+        <p class="mb-4">
+          Invertir en programas sólidos de formación no solo protege los datos, sino que también fortalece el elemento humano, convirtiéndolo en una línea de defensa eficaz contra los ciberdelincuentes.
+        </p>
+
+        <img class="max-w-full mx-auto mb-4" src="./assets/images/articulo-2.jpg" alt="Engaño">
+
+        <p class="mb-4">
+          La <strong>ingeniería social</strong> es una técnica de manipulación psicológica utilizada por ciberdelincuentes para engañar a las personas y obtener información confidencial o acceso a sistemas. Métodos comunes incluyen el <strong>phishing</strong> (correos electrónicos fraudulentos), <strong>vishing</strong> (llamadas telefónicas engañosas) y <strong>smishing</strong> (mensajes de texto maliciosos). La concienciación en ciberseguridad es esencial para prevenir estos ataques.
+        </p>
+      </article>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

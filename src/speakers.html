@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png?as=webp">
+    <title>Jornadas de Seguridad | Participantes</title>
+  </head>
+  <body class="flex flex-col h-screen bg-seguridad-background">
+    <include src="./views/menu.html"></include>
+    <main class="bg-seguridad-background flex-[35] w-[85%] mx-auto">
+      <h1 class="mb-8 text-seguridad-principal font-black text-4xl">Participantes</h1>
+      <div class="flex flex-wrap gap-8">
+
+        <include src="./views/card.html">
+        {
+          "cardTitle": "Seguridad en la Inteligencia Artificial y el Machine Learning",
+          "cardDescription": "Cómo proteger los modelos de IA de ataques adversariales y garantizar su integridad. Formas de mitigar vulnerabilidades en sistemas automatizados."
+        }
+        </include>
+        
+        <include src="./views/card.html">
+        {
+          "cardTitle": "Ciberseguridad en IoT (Internet de las Cosas)",
+          "cardDescription": "Riesgos y amenazas para dispositivos conectados en el hogar y en entornos industriales. Mejores prácticas para proteger dispositivos IoT y evitar ataques masivos."
+        }
+        </include>
+
+        <include src="./views/card.html">
+        {
+          "cardTitle": "Ingeniería Social y Concienciación de Seguridad",
+          "cardDescription": "Métodos de engaño como phishing, vishing y smishing. Estrategias efectivas para educar a los usuarios y empleados en ciberseguridad."
+        }
+        </include>
+
+        <include src="./views/card.html">
+          {
+            "cardTitle": "Ransomware y Estrategias de Defensa",
+            "cardDescription": "Análisis de los ataques recientes de ransomware y sus impactos económicos. Cómo implementar copias de seguridad seguras y respuestas efectivas a incidentes."
+          }
+        </include>
+
+        <include src="./views/card.html">
+          {
+            "cardTitle": "Seguridad en la Nube",
+            "cardDescription": "Desafíos y soluciones de proteger datos en servicios cloud como AWS, Azure o Google Cloud. Configuraciones seguras y prevención de filtraciones de datos en entornos multicloud."
+          }
+        </include>
+
+        <include src="./views/card.html">
+          {
+            "cardTitle": "Ciberseguridad en el Desarrollo de Aplicaciones (DevSecOps)",
+            "cardDescription": "Integración de seguridad en el ciclo de desarrollo (CI/CD). Pruebas de seguridad automatizadas y detección de vulnerabilidades en el código."
+          }
+        </include>
+
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

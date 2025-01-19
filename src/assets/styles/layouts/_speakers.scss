@@ -1,0 +1,4 @@
+
+.card{
+  @apply flex flex-col w-full sm:w-[calc(50%-2rem)] lg:w-[calc(33.33%-2rem)] bg-seguridad-background text-seguridad-principal text-center overflow-hidden border-none rounded-md transition-colors hover:bg-seguridad-contraste-hover hover:text-seguridad-contraste;
+}

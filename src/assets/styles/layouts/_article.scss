@@ -1,0 +1,30 @@
+
+.lista {
+  counter-reset: li;  
+}
+
+.elemento{
+  @apply relative block p-[.4em] pl-[2em] my-[.5em] bg-seguridad-contraste-hover text-seguridad-principal rounded-[.3em] transition-all duration-300 hover:bg-seguridad-contraste-hover;  
+}
+
+.elemento:before {
+  content: counter(li);
+  counter-increment: li;
+  height: 2em;
+  width: 2em;
+  position: absolute; 
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: $seguridad-contraste;
+  line-height: 2em;
+  border: .3em solid $seguridad-menu;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+
+.elemento:hover:before{
+  transform: rotate(360deg);  
+}
