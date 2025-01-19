@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{html,js}'],
@@ -30,21 +29,8 @@ module.exports = {
           'contraste-oscuro': 'rgb(255, 255, 255)', // Contraste oscuro
           'contraste-hover': 'rgb(229, 225, 254)',  // Hover del contraste
         },
-        btn: {
-          'primary-bg': 'hwb(5 35% 15%)',  // Fondo del botón primario
-        },
       },
     },
-  },
-  plugins: [
-    plugin(function({ addUtilities }) {
-      const newUtilities = {
-        '.transparentize': {
-          '--tw-bg-opacity': '0.8', // Aplica la opacidad al background
-        },
-      };
-      addUtilities(newUtilities, ['responsive', 'hover']);
-    }),
-  ],
+  }
 }
 
